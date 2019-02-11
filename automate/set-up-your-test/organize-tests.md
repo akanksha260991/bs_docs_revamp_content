@@ -11,19 +11,25 @@ You can organize your automated tests by projects and builds by using the `proje
 For example, if you are working on your new marketing website, and want to run your test suite for the Alpha 0.1.7 build, you can pass the following capabilities:
 
 ```java
-DesiredCapabilities caps = new DesiredCapabilities();
-
 // Testing the home page
+
+DesiredCapabilities caps = new DesiredCapabilities();
 caps.setCapability("project", "Marketing Website v2");
 caps.setCapability("build", "alpha_0.1.7");
 caps.setCapability("name", "Home page must have a title");
+```
 
+When you run the next test, just update the name and it is grouped automatically into the same build and project.
+
+```java
 // Testing the admin page
+
+DesiredCapabilities caps = new DesiredCapabilities();
 caps.setCapability("project", "Marketing Website v2");
 caps.setCapability("build", "alpha_0.1.7");
 caps.setCapability("name", "Admin page access must be denied");
 ```
 
-You can use the `name` capability to give your session a name (usually describing the test case) so it is easy for you to debug later.
+**Pro-tip:** You can use the `name` capability to give your session a name (usually describing the test case) so it is easy for you to debug later.
 
 Remember to update the build version / number the next time you run the test again. If you are running your tests on a different project, remember to update the project name too.
