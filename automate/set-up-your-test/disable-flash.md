@@ -1,5 +1,7 @@
 # Disable Flash
 
+You can disable Flash in Chrome, Firefox and IE as follows:
+
 | Browser | Steps to disable Flash |
 | --- | --- |
 |Chrome| To disable Flash in Chrome, create a `chromeOptions` capability, and pass the `--disable-plugins` argument. Note that using this argument will turn off all the plugins in the browser. <br/><br/> <pre lang=java><code>ChromeOptions options = new ChromeOptions(); &#10;options.addArguments("--disable-plugins");&#10;caps.setCapability(ChromeOptions.CAPABILITY, options);</code></pre>|
