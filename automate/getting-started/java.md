@@ -23,6 +23,10 @@ Before you can start running your Selenium tests with Java:
 
 ### Step 1: Run your first test
 
+> Note: Running your Selenium tests on BrowserStack requires a username and an access key.
+
+To obtain your username and access keys, sign up for a Free Trial or purchase a plan.
+
 To get started, let’s run a simple Selenium Webdriver test. The Java script below will open a URL, input a string, submit the form, and return the page title.
 
 ***First***, select the OS and Device/Browser combination you'd like to test on using the drop-down menus below. This will automatically update the Java code sample below:
@@ -43,8 +47,8 @@ import java.net.URL;
 
 public class JavaSample {
 
-  public static final String USERNAME = "kalpeshdoshi3";
-  public static final String AUTOMATE_KEY = "ekKTGeFduvsvXvXx96xG";
+  public static final String USERNAME = "USERNAME";
+  public static final String AUTOMATE_KEY = "ACCESS_KEY";
   public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
   public static void main(String[] args) throws Exception {
@@ -141,7 +145,7 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 
 public static void mark() throws URISyntaxException, UnsupportedEncodingException, IOException {
-  URI uri = new URI("https://kalpeshdoshi3:ekKTGeFduvsvXvXx96xG@api.browserstack.com/automate/sessions/<session-id>.json");
+  URI uri = new URI("https://USERNAME:ACCESS_KEY@api.browserstack.com/automate/sessions/<session-id>.json");
   HttpPut putRequest = new HttpPut(uri);
 
   ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
@@ -180,12 +184,30 @@ Console Logs capture the browser's console output at various steps of the test t
 
 Console Logs are enabled with log level set to 'errors' by default. To set different log levels, you need to use the capability browserstack.console with values 'disable', 'errors', 'warnings', 'info' or 'verbose', as shown below:
 ```
-caps.setCapability("browserstack.console", "warnings")
+caps.setCapability("browserstack.console", "warnings");
 ```
 **Network Logs**
 Network Logs capture the browser's performance data such as network traffic, latency, HTTP requests and responses in the HAR format. You can download network logs using the REST API or from the Automate Dashboard. You can visualize HAR files using the HAR Viewer.
 
 Network Logs are disabled by default. To enable Network Logs use the capability **browserstack.networkLogs** with the value **'true'**, as shown below:
 ```
-caps.setCapability("browserstack.networkLogs", "true")
+caps.setCapability("browserstack.networkLogs", "true");
+```
+
+### Next steps
+Congrats! You are now able to run your tests on BrowserStack cloud. You may want to check out these resources:
+***
+#### [Testing on internal networks](https://www.browserstack.com/docs/automate/getting-started-with-local-testing?lang=<language>&framework=<framework>)
+***
+#### [Run tests in parallel](https://www.browserstack.com/docs/automate/getting-started-with-parallel-testing?lang=<language>&framework=<framework>)
+***
+#### [Debug your app](https://www.browserstack.com/docs/automate/view-test-results?lang=<language>&framework=<framework>)
+***
+#### [Integrate with CICD Tools](https://www.browserstack.com/docs/automate/jenkins?lang=<language>&framework=<framework>)
+***
+### Questions?
+We're always happy to help with any questions you might have! Read [FAQ](https://www.browserstack.com/support?tag=automate), [Contact support](https://www.browserstack.com/contact), or [connect with our sales team](https://www.browserstack.com/contact#sales).
+
+```
+Was this page helpful? Yes No
 ```
