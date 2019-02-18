@@ -28,7 +28,7 @@ npm install -g selenium-webdriver
 
 > Note: Running your Selenium tests on BrowserStack requires a username and an access key.
 
-To obtain your username and access keys, sign up for a Free Trial or purchase a plan.
+To obtain your username and access keys, [sign up for a Free Trial](https://www.browserstack.com/users/sign_up) or [purchase a plan](https://www.browserstack.com/pricing).
 
 To get started, let’s run a simple Selenium Webdriver test. The NodeJS script below will open a URL, input a string, submit the form, and return the page title.
 
@@ -37,6 +37,8 @@ To get started, let’s run a simple Selenium Webdriver test. The NodeJS script 
 <OS / Device Selector>
 
 Look for the <real device> icon to select a real device.
+
+> Note: Testing on real devices requires the [Automate Mobile plan](https://www.browserstack.com/pricing?tab=browser-plans-tab)
 
 ```
 var webdriver = require('selenium-webdriver');
@@ -141,7 +143,7 @@ BrowserStack provides a range of debugging tools to help you quickly identify an
 Text Logs are a comprehensive record of your test. They are used to identify all the steps executed in the test and troubleshoot errors for the failed step. Text Logs are accessible from the Automate dashboard or via our [REST API](https://www.browserstack.com/automate/rest-api).
 
 **Visual Logs**
-Visual Logs automatically capture the screenshots generated at every Selenium command run through your Javascript. Visual logs help with debugging the exact step and the page where failure occurred. They also help identify any layout or design related issues with your web pages on different browsers.
+Visual Logs automatically capture the screenshots generated at every Selenium command run through your NodeJS script. Visual logs help with debugging the exact step and the page where failure occurred. They also help identify any layout or design related issues with your web pages on different browsers.
 
 Visual Logs are disabled by default. In order to enable Visual Logs you will need to set **browserstack.debug** capability to **'true'**:
 ```

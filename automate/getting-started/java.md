@@ -25,7 +25,7 @@ Before you can start running your Selenium tests with Java:
 
 > Note: Running your Selenium tests on BrowserStack requires a username and an access key.
 
-To obtain your username and access keys, sign up for a Free Trial or purchase a plan.
+To obtain your username and access keys, [sign up for a Free Trial](https://www.browserstack.com/users/sign_up) or [purchase a plan](https://www.browserstack.com/pricing).
 
 To get started, let’s run a simple Selenium Webdriver test. The Java script below will open a URL, input a string, submit the form, and return the page title.
 
@@ -34,6 +34,8 @@ To get started, let’s run a simple Selenium Webdriver test. The Java script be
 <OS / Device Selector>
 
 Look for the <real device> icon to select a real device.
+
+> Note: Testing on real devices requires the [Automate Mobile plan](https://www.browserstack.com/pricing?tab=browser-plans-tab)
 
 ```
 import org.openqa.selenium.By;
