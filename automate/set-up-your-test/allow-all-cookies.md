@@ -9,7 +9,7 @@ You can allow all cookies in Safari using the `browserstack.safari.allowAllCooki
 For example, this is how you allow all cookies in Safari:
 
 ```java
-// Enabling visual logs
+// Allowing all cookies in Safari
 
 DesiredCapabilities caps = new DesiredCapabilities();
 caps.setCapability("Browser.safari.allowAllCookies", "true");
