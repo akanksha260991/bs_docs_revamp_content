@@ -164,7 +164,7 @@ The two potential values for status can either be passed or failed. Optionally, 
 BrowserStack provides a range of debugging tools to help you quickly identify and fix bugs you discover through your automated tests.
 
 **Text Logs**
-Text Logs are a comprehensive record of your test. They are used to identify all the steps executed in the test and troubleshoot errors for the failed step. Text Logs are accessible from the Automate dashboard or via our [REST API](https://www.browserstack.com/automate/rest-api).
+Text Logs are a comprehensive record of your test. They are used to identify all the steps executed in the test and troubleshoot errors for the failed step. Text Logs are accessible from the Automate dashboard or via our [REST API](https://www.browserstack.com/docs/selenium/api-reference).
 
 **Visual Logs**
 Visual Logs automatically capture the screenshots generated at every Selenium command run through your Java script. Visual logs help with debugging the exact step and the page where failure occurred. They also help identify any layout or design related issues with your web pages on different browsers.
@@ -174,38 +174,25 @@ Visual Logs are disabled by default. In order to enable Visual Logs you will nee
 caps.setCapability("browserstack.debug", "true");
 ```
 **Video Recording**
-Every test run on the BrowserStack Selenium grid is recorded exactly as it is executed on our remote machine. This feature is particularly helpful whenever a browser test fails. You can access videos from Automate Dashboard for each session. You can also download the videos from the Dashboard or retrieve a link to download the video using our [REST API](https://www.browserstack.com/automate/rest-api).
+Every test run on the BrowserStack Selenium grid is recorded exactly as it is executed on our remote machine. This feature is particularly helpful whenever a browser test fails. You can access videos from Automate Dashboard for each session. You can also download the videos from the Dashboard or retrieve a link to download the video using our [REST API](https://www.browserstack.com/docs/selenium/api-reference).
 
 >Note: Video recording increases test execution time slightly. You can disable this feature by setting the browserstack.video capability to false.
 
 ```
 caps.setCapability("browserstack.video", "false");
 ```
-**Console Logs**
-Console Logs capture the browser's console output at various steps of the test to troubleshoot javascript issues. You can retrieve Console Logs using our [REST API](https://www.browserstack.com/automate/rest-api). You will also be able to download logs from Automate Dashboard.
-
-Console Logs are enabled with log level set to 'errors' by default. To set different log levels, you need to use the capability browserstack.console with values 'disable', 'errors', 'warnings', 'info' or 'verbose', as shown below:
-```
-caps.setCapability("browserstack.console", "warnings");
-```
-**Network Logs**
-Network Logs capture the browser's performance data such as network traffic, latency, HTTP requests and responses in the HAR format. You can download network logs using the REST API or from the Automate Dashboard. You can visualize HAR files using the HAR Viewer.
-
-Network Logs are disabled by default. To enable Network Logs use the capability **browserstack.networkLogs** with the value **'true'**, as shown below:
-```
-caps.setCapability("browserstack.networkLogs", "true");
-```
+In addition to these logs BrowserStack also provides Raw logs, Network logs, Console logs, Selenium logs, Appium logs and Interactive session. Complete details to enable all the debugging options can be found [here](https://www.browserstack.com/docs/automate/selenium/java-testng/debug-failed-tests)
 
 ### Next steps
 Congrats! You are now able to run your tests on BrowserStack cloud. You may want to check out these resources:
 ***
-#### [Testing on internal networks](https://www.browserstack.com/docs/automate/getting-started-with-local-testing?lang=<language>&framework=<framework>)
+#### [Testing on internal networks](https://www.browserstack.com/docs/selenium/<language>/getting-started-with-local-testing)
 ***
-#### [Run tests in parallel](https://www.browserstack.com/docs/automate/getting-started-with-parallel-testing?lang=<language>&framework=<framework>)
+#### [Run tests in parallel](https://www.browserstack.com/docs/selenium/<language>/getting-started-with-parallel-testing)
 ***
-#### [Debug your app](https://www.browserstack.com/docs/automate/view-test-results?lang=<language>&framework=<framework>)
+#### [Debug your app](https://www.browserstack.com/docs/selenium/<language>/view-test-results)
 ***
-#### [Integrate with CICD Tools](https://www.browserstack.com/docs/automate/jenkins?lang=<language>&framework=<framework>)
+#### [Integrate with CICD Tools](https://www.browserstack.com/docs/selenium/<language>/jenkins)
 ***
 ### Questions?
 We're always happy to help with any questions you might have! Read [FAQ](https://www.browserstack.com/support?tag=automate), [Contact support](https://www.browserstack.com/contact), or [connect with our sales team](https://www.browserstack.com/contact#sales).
