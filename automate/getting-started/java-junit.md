@@ -11,7 +11,7 @@ BrowserStack gives you instant access to our Selenium Grid of 2000+ real devices
 4. Mark tests as pass / fail
 5. Debug your app
 
-> Note: All the code samples and files referred to in this guide can be found in our GitHub repo: [junnit-browserstack](https://github.com/browserstack/junit-browserstack)
+> Note: All the code samples and files referred to in this guide can be found in our GitHub repo: [junit-browserstack](https://github.com/browserstack/junit-browserstack)
 
 ### Prerequisites:
 Before you can start running your Selenium tests with JUnit, ensure you have the JUnit libraries installed. Ensure it is included in the pom.xml, as shown below:
