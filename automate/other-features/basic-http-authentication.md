@@ -13,4 +13,14 @@ For example, the following would access the page index.html at the web site www.
 https://Aladdin:OpenSesame@www.example.com/index.html
 ```
 
+So, the following code snippet will open the index.html page on www.example.com in the BrowserStack remote browsers without prompting for login:
+
+```java
+// Start a remote browser with the desired capabilities
+WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+
+// ... Get the URL
+driver.get("https://Aladdin:OpenSesame@www.example.com/index.html")
+```
+
 **Note:** Some browsers (some versions of Chrome & IE) don't support URL encoding anymore as per [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3.2.1). We recommended you not to use Basic Auth in your test environments where possible so you can run your tests in a variety of browsers. You might instead want to setup a local server and use our [local testing features](/docs/selenium/java-testng/getting-started-with-local-testing) to test your websites.
