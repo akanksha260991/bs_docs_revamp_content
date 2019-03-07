@@ -14,7 +14,7 @@ Visual logs are disabled by default. You can enable them by using the `browserst
 
 | Capability | Description | Expected values |
 | ---------- | ----------- | --------------- |
-| `browserstack.debug`  | Enable visual logs? | A boolean. Defaults to `False` <br/><br/> `True` if you want to enable the visual logs. `False` otherwise. |
+| `browserstack.debug`  | Enable visual logs? | A string. Defaults to `false` <br/><br/> `true` if you want to enable the visual logs. `false` otherwise. |
 
 For example, this is how you enable visual logs in Java:
 
@@ -32,7 +32,7 @@ Video logs are enabled by default. Note that video recording increases the text 
 
 | Capability | Description | Expected values |
 | ---------- | ----------- | --------------- |
-| `browserstack.video`  | Enable video recording? | A boolean. Defaults to `True` <br/><br/> `True` if you want to enable the video recording. `False` otherwise. |
+| `browserstack.video`  | Enable video recording? | A string. Defaults to `true` <br/><br/> `true` if you want to enable the video recording. `false` otherwise. |
 
 For example, this is how you disable video logs in Java:
 
@@ -77,7 +77,7 @@ Network Logs are disabled by default. To enable Network Logs use the `browsersta
 
 | Capability | Description | Expected values |
 | ---------- | ----------- | --------------- |
-| `browserstack.networkLogs`  | Enable network logs? | A boolean. Defaults to `False` <br/><br/> `True` if you want to enable network logs. `False` otherwise. |
+| `browserstack.networkLogs`  | Enable network logs? | A string. Defaults to `false` <br/><br/> `true` if you want to enable network logs. `false` otherwise. |
 
 For example, this is how you enable network logs in Java:
 
