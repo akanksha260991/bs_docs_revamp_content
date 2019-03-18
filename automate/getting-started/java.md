@@ -92,10 +92,10 @@ In two steps, configure your Selenium Webdriver tests for Local Testing:
 
   Download the appropriate binary:
 
-  - OS X (Recommended for your system)
-  - Linux 32-bit
-  - Linux 64-bit
-  - Windows
+  - [OS X (Recommended for your system)](https://www.browserstack.com/browserstack-local/BrowserStackLocal-darwin-x64.zip)
+  - [Linux 32-bit](https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-ia32.zip)
+  - [Linux 64-bit](https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-x64.zip)
+  - [Windows](https://www.browserstack.com/browserstack-local/BrowserStackLocal-win32.zip)
 
   The download links are secure. The binaries are digitally signed, identifying the publisher as BrowserStack Ltd. Read more about our [security](https://www.browserstack.com/security#local-testing).
 
@@ -123,12 +123,12 @@ On BrowserStack, you can run multiple Selenium Webdriver tests at the same time 
 With Parallel Testing, you can run the same test on different browser/device combinations, or run different tests on the same browser/device combination. Parallel Testing will help you reduce the run time of your test suite, resulting in faster build times and faster releases.
 
 To start Parallel testing, you can use any of the popular test frameworks which work with Java and Selenium. We have provided getting started guides on some of the popular frameworks below:
-- [TestNG](https://www.browserstack.com/automate/testng)
-- [Gauge](https://www.browserstack.com/automate/gauge)
-- [JBehave](https://www.browserstack.com/automate/jbehave)
-- [JUnit](https://www.browserstack.com/automate/junit)
-- [Selenide](https://www.browserstack.com/automate/selenide)
-- [Serenity](https://www.browserstack.com/automate/serenity)
+- [TestNG](https://www.browserstack.com/selenium/java-testng/getting-started)
+- [Gauge](https://www.browserstack.com/selenium/java-gauge/getting-started)
+- [JBehave](https://www.browserstack.com/selenium/java-jbehave/getting-started)
+- [JUnit](https://www.browserstack.com/selenium/java-junit/getting-started)
+- [Selenide](https://www.browserstack.com/selenium/java-selenide/getting-started)
+- [Serenity](https://www.browserstack.com/selenium/java-serenity/getting-started)
 
 ### Step 4: Mark tests as pass / fail
 It is possible to mark tests as either a pass or a fail, using the following snippet:
