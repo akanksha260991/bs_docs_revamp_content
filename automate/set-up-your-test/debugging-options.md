@@ -14,7 +14,16 @@ Visual logs are disabled by default. You can enable them by using the `browserst
 
 | Capability | Description | Expected values |
 | ---------- | ----------- | --------------- |
-| `browserstack.debug`  | Enable visual logs? | A boolean. Defaults to `False` <br/><br/> `True` if you want to enable the visual logs. `False` otherwise. |
+| `browserstack.debug`  | Enable visual logs? | A string. Defaults to `false` <br/><br/> `true` if you want to enable the visual logs. `false` otherwise. |
+
+For example, this is how you enable visual logs in Java:
+
+```java
+// Enabling visual logs
+
+DesiredCapabilities caps = new DesiredCapabilities();
+caps.setCapability("browserstack.debug", "true");
+```
 
 ## Video logs
 Every test run on the BrowserStack Selenium grid is recorded exactly as it is executed on our remote machine. This feature is particularly helpful whenever a browser test fails, so you can see the entire test in action. You can access these videos from the [Automate dashboard](https://automate.browserstack.com/dashboard) for each session. You can also download the videos from the Dashboard or retrieve a link to download the video using our [REST API](https://www.browserstack.com/automate/rest-api).
@@ -23,7 +32,16 @@ Video logs are enabled by default. Note that video recording increases the text 
 
 | Capability | Description | Expected values |
 | ---------- | ----------- | --------------- |
-| `browserstack.video`  | Enable video recording? | A boolean. Defaults to `True` <br/><br/> `True` if you want to enable the video recording. `False` otherwise. |
+| `browserstack.video`  | Enable video recording? | A string. Defaults to `true` <br/><br/> `true` if you want to enable the video recording. `false` otherwise. |
+
+For example, this is how you disable video logs in Java:
+
+```java
+// Disabling video logs
+
+DesiredCapabilities caps = new DesiredCapabilities();
+caps.setCapability("browserstack.video", "false");
+```
 
 ## Console logs
 Console Logs capture the browser's JS console output at various steps of the test to troubleshoot JavaScript issues. You can retrieve Console Logs using both the [Automate dashboard](https://automate.browserstack.com/dashboard), as well as the [REST API to access text logs](https://www.browserstack.com/automate/rest-api). Currently, this works only for Chrome browsers, and we will roll this out to other browsers soon.
@@ -34,6 +52,24 @@ Console logs are enabled by default and are set to `errors`. You can disable the
 | ---------- | ----------- | --------------- |
 | `browserstack.console`  | Level of console logs to capture | A string. Defaults to `errors` <br/><br/> `disabled` to disable console logs.<br/> `errors` to capture errors.<br/> `warnings` to capture warnings and errors.<br/> `info` to capture info, warnings and errors.<br/> `verbose` to capture everything|
 
+For example, this is how you disable console logs in Java:
+
+```java
+// Disabling console logs
+
+DesiredCapabilities caps = new DesiredCapabilities();
+caps.setCapability("browserstack.console", "disabled");
+```
+
+If you want to change the console logs level to `info`, this is how you do it in Java:
+
+```java
+// Setting console logs level to info
+
+DesiredCapabilities caps = new DesiredCapabilities();
+caps.setCapability("browserstack.console", "info");
+```
+
 ## Network logs
 Network Logs capture the browser's performance data such as network traffic, latency, HTTP requests and responses in the HAR format. You can download network logs using both the [Automate dashboard](https://automate.browserstack.com/dashboard), as well as the [REST API to access text logs](https://www.browserstack.com/automate/rest-api). You can visualize HAR files using the [HAR Viewer](http://www.softwareishard.com/har/viewer/).
 
@@ -41,4 +77,13 @@ Network Logs are disabled by default. To enable Network Logs use the `browsersta
 
 | Capability | Description | Expected values |
 | ---------- | ----------- | --------------- |
-| `browserstack.networkLogs`  | Enable network logs? | A boolean. Defaults to `False` <br/><br/> `True` if you want to enable network logs. `False` otherwise. |
+| `browserstack.networkLogs`  | Enable network logs? | A string. Defaults to `false` <br/><br/> `true` if you want to enable network logs. `false` otherwise. |
+
+For example, this is how you enable network logs in Java:
+
+```java
+// Enabling network logs
+
+DesiredCapabilities caps = new DesiredCapabilities();
+caps.setCapability("browserstack.networkLogs", "true");
+```
