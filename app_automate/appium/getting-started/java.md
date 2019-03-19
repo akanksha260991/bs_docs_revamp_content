@@ -198,9 +198,9 @@ caps.setCapability("browserstack.local", "true");
 ```
 
 ### Step 3: Run tests in parallel
-On BrowserStack, you can run multiple Appium tests at the same time across various browser, device and OS combinations. This is “Parallel Testing”. Parallel Testing gives you the same benefits as running a multi-threaded application.
+On BrowserStack, you can run multiple Appium tests at the same time across various device and OS combinations. This is “Parallel Testing”. Parallel Testing gives you the same benefits as running a multi-threaded application.
 
-With Parallel Testing, you can run the same test on different browser/device combinations, or run different tests on the same browser/device combination. Parallel Testing will help you reduce the run time of your test suite, resulting in faster build times and faster releases.
+With Parallel Testing, you can run the same test on different device combinations, or run different tests on the same device combination. Parallel Testing will help you reduce the run time of your test suite, resulting in faster build times and faster releases.
 
 To start Parallel testing, you can use any of the popular test frameworks which work with Java and Appium. We have provided getting started guides on some of the popular frameworks below:
 - [TestNG](https://www.browserstack.com/app-automate/appium/java-testng/getting-started)
@@ -259,7 +259,7 @@ Congrats! You are now able to run your tests on BrowserStack cloud. You may want
 #### [Integrate with CICD Tools](https://www.browserstack.com/docs/app-automate/appium/<language>/jenkins)
 ***
 ### Questions?
-We're always happy to help with any questions you might have! Read [FAQ](https://www.browserstack.com/support?tag=automate), [Contact support](https://www.browserstack.com/contact), or [connect with our sales team](https://www.browserstack.com/contact#sales).
+We're always happy to help with any questions you might have! Read [FAQ](https://www.browserstack.com/support?tag=app-automate), [Contact support](https://www.browserstack.com/contact), or [connect with our sales team](https://www.browserstack.com/contact#sales).
 
 ```
 Was this page helpful? Yes No
