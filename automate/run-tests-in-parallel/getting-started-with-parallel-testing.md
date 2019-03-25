@@ -21,4 +21,4 @@ Usually, modifications will be needed to your test suite if you:
 
 * **Are using [Local Testing](/docs/selenium/java-testng/getting-started-with-local-testing)**: To be able to serve the increased number of incoming requests, you can either use the `--parallel-runs` flag so the binary will automatically create multiple processes to serve the requests, or use `--local-identifier` and spin multiple binary tunnels separately. Note that if you choose to go the local identifier route, your tests should be able to choose the tunnel that needs to be used.
 
-If you need any further help, feel free to contact our Support team who are always ready to help you out!
+If you need any further help, feel free to contact our Support team who are always ready to help you out! You can also use our [Parallel requirement calculator](/automate/parallel-calculator) to figure out the optimal number of parallel tests you should buy & run so you can finish all of your tests faster.
