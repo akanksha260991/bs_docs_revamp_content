@@ -63,7 +63,7 @@ curl -u "<username>:<accesskey>" -X GET "https://api-cloud.browserstack.com/app-
 
 An API to DELETE an uploaded App
 ```
-curl -u "akanksha50:PFphTtU8jcpyB4hifUMB" -X DELETE https://api-cloud.browserstack.com/app-automate/app/delete/<AppId>
+curl -u "<username>:<accesskey>" -X DELETE https://api-cloud.browserstack.com/app-automate/app/delete/<AppId>
 ```
 
 
