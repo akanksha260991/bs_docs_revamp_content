@@ -13,7 +13,7 @@ Console Logs are by default **enabled** in tests, with log level set to **errors
 
 
 <br/>
-You can access console logs in a session inside [Automate Dashboard](https://automate.browserstack.com).
+You can access console logs in a session on [Automate Dashboard](https://automate.browserstack.com).
 
 <br/>
 You can also retrieve Console Logs using [REST API](https://www.browserstack.com/automate/rest-api#rest-api-sessions):<br/>
