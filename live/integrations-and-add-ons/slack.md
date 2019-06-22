@@ -2,7 +2,7 @@
 Integrating Slack with BrowserStack
 ===================================
 
-Integrate Slack with BrowserStack to easily bugs details with your colleagues.
+Integrate Slack with BrowserStack to easily file bugs.
 
 ### Introduction
 
