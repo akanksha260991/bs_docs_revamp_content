@@ -38,3 +38,33 @@ Once the setup in completed, you can go to App Live dashboard and start testing 
 2. For the build you want to test, click on sync icon to upload to our servers.
 3. Select a device and start testing.
 
+## Team sharing
+
+Users integrated with App Center can enable other team members to instantly start testing App Center apps on App Live.
+
+**Enable team to join**
+
+To enable team to test apps synced with your account,
+
+1. Open App Center Settings on [App Live dashboard](https://app-live.browserstack.com/dashboard).
+2. Select 'Enable team to join'.
+3. Click on 'Sync' to update settings.
+
+> Note
+1. Your API token will not be visible to other team members.
+2. Other team members cannot modify your list of apps.
+3. Apps will be shared with all users who are a part of your app testing team on BrowserStack.
+4. Only 1 user per team can enable sharing.
+
+**Join team**
+
+If a user in your team on App Live has already enabled settings for team, you can start testing with one click. Follow these steps:
+
+1. Click on 'Sync with App Center' on [App Live dashboard](https://app-live.browserstack.com/dashboard).
+2. Click on 'Join team' to start testing shared apps.
+
+> Note: Users who have already synced their App Center account will not see this option. To enable it, user will need to un-sync the account here.
+
+
+
+
