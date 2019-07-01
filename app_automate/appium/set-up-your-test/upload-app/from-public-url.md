@@ -1,6 +1,8 @@
 # Upload App from Public Url
 
-If you do not have your app file on the local machine from where you are running the test and it is hosted on a different location, you can upload it to the BrowserStack servers from any public hosted location. You can achieve that by just providing the app public url in the API call to upload an app. The url should be accessible over the internet so that BrowserStack can directly upload it from that location. Use the below API call to upload app from a publicly accessible location.
+If you do not have your app file on the local machine from where you are running the test and it is hosted on a different location, you can upload it to the BrowserStack servers from any public hosted location. You can achieve that by just providing the app public url in the API call to upload an app. The url should be accessible over the internet so that BrowserStack can directly upload it from that location. 
+
+Use the below API call to upload app from a publicly accessible location.
 
 ```
 curl -u "<username>:<accesskey>" \
