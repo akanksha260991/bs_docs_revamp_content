@@ -4,10 +4,10 @@
 Upload your Android app (.apk file) or iOS app (.ipa file) to the BrowserStack servers using the REST API.
 
 ```
-curl -u "USERNAME:ACCESS_KEY" \
--X POST "https://api-cloud.browserstack.com/app-automate/upload" \
--F "file=@/path/to/app/file/Application-debug.apk"
+curl -u "USERNAME:ACCESS_KEY" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@/path/to/app/file/Application-debug.apk" -F 'data={"custom_id": "MyApp"}'
 ```
+
+>Note: custom_id is optional. You can upload multiple builds under same custom_id. Use custom_id in 'app' capability for Appium to always pick the last uploaded build.
 
 >Note: Please note the App URL (bs://<hashed appid>) returned in the response of this call:
 
