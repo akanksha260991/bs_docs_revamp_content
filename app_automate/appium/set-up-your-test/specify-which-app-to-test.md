@@ -1,7 +1,8 @@
 # Specifying the Uploaded App to be Tested
 
+Appium provides a series of capabilities that you can set for the Appium version you are running. Appium server on the BrowserStack will receive the capability you set on the client side. User can use BrowserStack specific capabilities to configure the tests.
 
-User can test their previously uploaded apps on BrowserStack, that were uploaded using a Custom ID. 
+To test the previously uploaded apps on BrowserStack, that were uploaded using a Custom ID, use the capability: 
 
 ### browserstack.app_version
 
