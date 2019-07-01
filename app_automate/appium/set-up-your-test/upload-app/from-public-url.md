@@ -5,8 +5,10 @@ If you do not have your app file on the local machine from where you are running
 ```
 curl -u "<username>:<accesskey>" \
 -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
--F "data={\"url\": \"https://www.browserstack.com/app-automate/sample-apps/android/WikipediaSample.apk\"}"
+-F "data={\"url\": \"https://www.browserstack.com/app-automate/sample-apps/android/WikipediaSample.apk\"}" -F 'data={"custom_id": "MyApp"}'
 ```
+
+>Note: custom_id is optional. You can upload multiple builds under same custom_id. Use custom_id in 'app' capability for Appium to always pick the last uploaded build.
 
 >Note: Please note the App URL (bs://<hashed appid>) returned in the response of this call:
 
