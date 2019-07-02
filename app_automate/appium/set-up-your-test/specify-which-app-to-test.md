@@ -6,7 +6,7 @@ To test the previously uploaded apps on BrowserStack, that were uploaded using a
 
 ### browserstack.app_version
 
-You can use 'browserstack.app_version' capability to configure your tests. Acceptable values are '-1', '-2' or so on. This will pick the latest-1 or latest-2 etc. version of your uploaded builds to install on your target device.
+You can use **browserstack.app_version** capability to configure your tests. Acceptable values are '-1', '-2' or so on. This will pick the latest-1 or latest-2 etc. version of your uploaded builds to install on your target device.
 
 > Default: Latest uploaded app version under the custom_id
 
