@@ -1,39 +1,59 @@
 # Set Debuuging Options
 
-You can organize your Appium builds and tests on BrowserStack that will allow you to access the sessions at a later stage using these identifiers. The capabilities available are:
+You can enable/disable different debugging options for your Appium tests on BrowserStack. The capabilities available are:
 
 ***
 
-1. Define project for your build
-2. Define build for your tests
-3. Define name for your test run
-
+1. Device Logs
+2. Appium Logs
+3. Visual Logs
+4. Video
+5. Network Logs
 ***
 
 
-### project
-The project can be specified using the capability named project, that allows the user to specify a name for logical group of buils. By default, the project name is Untitled Project. The example of setting this capability:
+### Device Logs
+Use the capability named browserstack.deviceLogs,  if you want to capture device logs for your test. The values are true/false. By default, the value is set to true. The example of setting this capability:
 
 
-> "project": "loginformproject"
-
+> "browserstack.deviceLogs": "false"
 
 
 --
 
 
-### build
-The build can be specified using the capability named build, that allows the user to specify a name for logical group of tests. By default, the build name is Untitled Project. The example of setting this capability:
-Allows the user to specify a name for a logical group of tests.
+### Appium Logs
+Use the capability named browserstack.appiumLogs,  if you want to capture raw appium logs for your test. The values are true/false. By default, the value is set to true. The example of setting this capability:
 
-> "build": "build 4.5"
+> "browserstack.appiumLogs": "false"
 
 
 --
 
 
-### name
-The name can be specified using the capability name, that allows the user to specify an identifier for the test run. The example of setting this capability:
+### Visual Logs
+Use the capability named browserstack.debug,  if you want to generate screenshots at various steps in your test. The values are true/false. By default, the value is set to false. The example of setting this capability:
 
-> "name": "logintest"
+> "browserstack.debug": "true"
+
+
+--
+
+
+### Video Logs
+Use the capability named browserstack.video, if you want to generate screenshots at various steps in your test. The values are true/false. By default, the value is set to true. The example of setting this capability:
+
+> "browserstack.video": "true"
+
+
+--
+
+
+### Network Logs
+Use the capability named browserstack.networkLogs, if you want to capture network logs for your test. The values are true/false. By default, the value is set to false. The example of setting this capability:
+
+> "browserstack.networkLogs": "true"
+
+
+
 
