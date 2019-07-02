@@ -23,7 +23,7 @@ Use the capability named browserstack.deviceLogs,  if you want to capture device
 
 
 ### Appium Logs
-Use the capability named browserstack.appiumLogs,  if you want to capture raw appium logs for your test. The values are true/false. By default, the value is set to true. The example of setting this capability:
+Use the capability named **browserstack.appiumLogs**,  if you want to capture raw appium logs for your test. The values are true/false. By default, the value is set to true. The example of setting this capability:
 
 > "browserstack.appiumLogs": "false"
 
@@ -32,7 +32,7 @@ Use the capability named browserstack.appiumLogs,  if you want to capture raw ap
 
 
 ### Visual Logs
-Use the capability named browserstack.debug,  if you want to generate screenshots at various steps in your test. The values are true/false. By default, the value is set to false. The example of setting this capability:
+Use the capability named **browserstack.debug**,  if you want to generate screenshots at various steps in your test. The values are true/false. By default, the value is set to false. The example of setting this capability:
 
 > "browserstack.debug": "true"
 
@@ -41,7 +41,7 @@ Use the capability named browserstack.debug,  if you want to generate screenshot
 
 
 ### Video Logs
-Use the capability named browserstack.video, if you want to generate screenshots at various steps in your test. The values are true/false. By default, the value is set to true. The example of setting this capability:
+Use the capability named **browserstack.video**, if you want to generate screenshots at various steps in your test. The values are true/false. By default, the value is set to true. The example of setting this capability:
 
 > "browserstack.video": "true"
 
@@ -50,7 +50,7 @@ Use the capability named browserstack.video, if you want to generate screenshots
 
 
 ### Network Logs
-Use the capability named browserstack.networkLogs, if you want to capture network logs for your test. The values are true/false. By default, the value is set to false. The example of setting this capability:
+Use the capability named **browserstack.networkLogs**, if you want to capture network logs for your test. The values are true/false. By default, the value is set to false. The example of setting this capability:
 
 > "browserstack.networkLogs": "true"
 
