@@ -13,7 +13,7 @@ You can enable/disable different debugging options for your Appium tests on Brow
 
 
 ### Device Logs
-Use the capability named browserstack.deviceLogs,  if you want to capture device logs for your test. The values are true/false. By default, the value is set to true. The example of setting this capability:
+Use the capability named **browserstack.deviceLogs**,  if you want to capture device logs for your test. The values are true/false. By default, the value is set to true. The example of setting this capability:
 
 
 > "browserstack.deviceLogs": "false"
