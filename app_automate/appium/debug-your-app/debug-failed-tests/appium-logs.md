@@ -1,4 +1,4 @@
-# App Automate Text Logs
+# App Automate Appium Logs
 
 Once the user has completed the session, the logs for the Appium Sessions can be viewed in the text format. This feature enables the user to debug their app in case their is any failure. 
 
