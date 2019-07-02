@@ -12,7 +12,7 @@ You can organize your Appium builds and tests on BrowserStack that will allow yo
 
 
 ### Project Name
-Use the capability project, to specify a name for a logical group of builds. The default value is Untitled Project. The example of setting this capability:
+Use the capability **project**, to specify a name for a logical group of builds. The default value is Untitled Project. The example of setting this capability:
 
 
 > "project": "loginformproject"
@@ -22,7 +22,7 @@ Use the capability project, to specify a name for a logical group of builds. The
 
 
 ### Build Name
-Use the capability build, to specify a name for a logical group of tests. The default value is Untitled Build. The example of setting this capability:
+Use the capability **build**, to specify a name for a logical group of tests. The default value is Untitled Build. The example of setting this capability:
 
 > "build" : "build 4.5"
 
@@ -31,7 +31,7 @@ Use the capability build, to specify a name for a logical group of tests. The de
 
 
 ### Test Name
-Use the capability name, to specify an identifier for your test run. The example of setting this capability:
+Use the capability **name**, to specify an identifier for your test run. The example of setting this capability:
 
 > "name" : "logintest"
 
