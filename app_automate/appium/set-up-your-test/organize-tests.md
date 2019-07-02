@@ -1,38 +1,37 @@
 # Organize Your Tests
 
-You can organize your Appium builds and tests on BrowserStack that will allow you to access the sessions at a later stage using these identifiers. The capabilities available are:
+You can organize your Appium builds and tests on BrowserStack that will allow you to access the sessions at a later stage using these identifiers. The options available are:
 
 ***
 
-1. Define project for your build
-2. Define build for your tests
-3. Define name for your test run
+1. Project Name for your build
+2. Build Name for your tests
+3. Name for your test run
 
 ***
 
 
-### Capability Name: project
-Allows the user to specify a name for a logical group of builds.
+### Project Name
+Use the capability project, to specify a name for a logical group of builds. The default value is Untitled Project. The example of setting this capability:
 
-**Example**: loginformproject
-**Default**: Untitled Project
+
+> "project": "loginformproject"
 
 
 --
 
 
-### Capability Name: build
-Allows the user to specify a name for a logical group of tests.
+### Build Name
+Use the capability build, to specify a name for a logical group of tests. The default value is Untitled Build. The example of setting this capability:
 
-**Example**: build 4.5
-**Default**: Untitled Build
+> "build" : "build 4.5"
 
 
 --
 
 
-### Capability Name: name
-Allows the user to specify an identifier for the test run.
+### Test Name
+Use the capability name, to specify an identifier for your test run. The example of setting this capability:
 
-**Example**: logintest
+> "name" : "logintest"
 
