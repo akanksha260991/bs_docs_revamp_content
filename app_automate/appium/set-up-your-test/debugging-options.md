@@ -1,4 +1,4 @@
-# Set Debuuging Options
+# Set Debugging Options
 
 You can enable/disable different debugging options for your Appium tests on BrowserStack. The capabilities available are:
 
