@@ -1,11 +1,11 @@
-# App Automate Appium Logs
+# Appium Logs
 
-Once the user has completed the session, the logs for the Appium Sessions can be viewed in the text format. This feature enables the user to debug their app in case their is any failure. 
+#### Leverage the full range of debugging tools provided by BrowserStack to easily debug your test automation for native and hybrid mobile apps.
 
-The text logs can be retrieved using the REST API.
+Appium Logs captures the raw Appium Logs for your test execution. With Appium logs you can debug the test in case of any exceptions. Text Logs are accessible via App Automate Dashboard. You can also download logs using the REST API.
+
+#### Retrieve Appium Logs using REST API:
 
 ```
 curl -u "USERNAME:ACCESS_KEY" https://api-cloud.browserstack.com/app-automate/builds/<build-id>/sessions/<session-id>/appiumlogs
 ```
-
-> Note: The text logs may have valuable data that can help user understand any problem that exists in the test execution.
