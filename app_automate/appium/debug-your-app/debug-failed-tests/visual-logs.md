@@ -10,7 +10,7 @@ Visual Logs are disabled by default. In order to enable Visual Logs you will nee
 caps.setCapability("browserstack.debug", "true");
 ```
 
-Access Visual Logs from App Automate Dashboard:
+#### Access Visual Logs from App Automate Dashboard:
 
 ![Visual Logs](https://d2ogrdw2mh0rsl.cloudfront.net/production/images/static/docs/app-automate/visual-screen-shots@2x.png "Visual Logs")
 
