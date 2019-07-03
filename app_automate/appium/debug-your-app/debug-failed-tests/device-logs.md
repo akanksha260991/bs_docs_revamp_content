@@ -1,11 +1,12 @@
-# App Automate Device Logs
+# Device Logs
 
-Once the user has completed the session, the logs for your Appium Sessions can be viewed in the text format. This feature enables the user to debug their app in case their is any failure. 
+#### Leverage the full range of debugging tools provided by BrowserStack to easily debug your test automation for native and hybrid mobile apps.
 
-The text logs can be retrieved using the REST API.
+Device Logs capture all the details of your Device test. You can download Device logs using the 'Device Logs' tab on the Dashboard. You can also retrieve a link to download the Device Logs by using our REST API for sessions. 
+
+
+#### The Device logs can be retrieved using the REST API.
 
 ```
 curl -u "USERNAME:ACCESS_KEY" https://api-cloud.browserstack.com/app-automate/builds/<build-id>/sessions/<session-id>/devicelogs
 ```
-
-> Note: The text logs may have valuable data that can help user understand any problem that exists in the test execution.
