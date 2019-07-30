@@ -18,7 +18,7 @@ Use the capability named **os_version** to specify OS you want to test. The valu
 
 The list of devices and associated OS versions available are:
 
-> **Android devices** :  
+**Android devices** :  
 
 | **Device**               | **OS Versions**  |  **Remarks**   |
 | -------------------------|:------------:| :----------:
@@ -49,7 +49,7 @@ The list of devices and associated OS versions available are:
 
 
 
-> **iOS devices** :
+**iOS devices** :
 
 | **Device**               | **OS Versions**  |  **Remarks**   |
 | -------------------------|:------------:| :----------:
