@@ -1,13 +1,11 @@
 ## Set Localization 
 
-To test the localized version of your app, you can set:
+To test the localized version of your app, you can set timezones, language and locale.
 
-a. Timezone 
-b. Devices language
-c. Locale
 
 
 ### Timezone
+
 In order to configure tests to run on a custom time zone (supported only for Android), use **browserstack.timezone** capability
 
 > "browserstack.timezone" : "UTC"
