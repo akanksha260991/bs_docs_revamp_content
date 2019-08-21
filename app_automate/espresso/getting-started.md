@@ -77,9 +77,9 @@ Complete list of API parameters:
 
 | Parameters | Required/Optional | Descriptiojn |
 | ---------- | ----------- | --------------- |
-|`app`| Required | app_url or custom_id or shareable_id of the app you want to test |
+|`app`| Required | app_url of the app you want to test |
 |`devices`| Required | list of Device and OS version you want to run your tests on. Acceptable format is -. Example: Google Pixel-8.0 |
-|`testsuite`| Required | test_url or custom_id or shareable_id of the test suite you want to test |
+|`testsuite`| Required | test_url of the test suite you want to test |
 |`package`| Optional | Set this parameter to test only some selected packages. Acceptable format is: [\"com.browserstack\", \"com.browserstack1\"] |  
 |`class`| Optional | Set this parameter to test only some selected classes. Acceptable format is: [\"com.browserstack.class1\", \"com.browserstack.class2\"] |
 |`annotation`| Optional | Set this parameter if you want to run tests only for particular annotations [\"P1\", \"P2\"] |
@@ -89,6 +89,7 @@ Complete list of API parameters:
 |`enableSpoonFramework`| Optional | Set this parameter if you want to capture the screenshots of your tests using the Spoon framework. By default the value is set to false. See the [espresso-app-browserstack](https://github.com/browserstack/espresso-browserstack) sample app for more details on integrating Spoon framework. Render the screenshots for your build using the [Espresso sessions](https://www.browserstack.com/app-automate/rest-api?framework=espresso#sessions) API. |
 |`disableAnimations`| Optional | Set this parameter to 'true' to disable animations on the device. |
 |`allowDeviceMockServer`|Optional| Set this parameter to 'true' if you are using Mock server on devices to test your app. Note: Local, NetworkLogs, IP geoLocation will not work if you enable this capability. |
+|`numShards` & `shardIndex`|Optional| Set these parameters if you want to break your test cases and run a particular shard of your choice. It helps you to optimize the total test execution time. The numShards specifies the number of shards in which you want to divide your tests and shardIndex specifies the particular shard to execute. Example: "numShards": "4", "shardIndex": "2". Both the capabilities are mandatory and should be non-negative, to allow the sharding of your test cases. The numShards capability value should be greater than zero and shardIndex should be anywhere between 0 to (numShards-1). Also, if you want to groups all your shards under one build, make use of the capability customBuildName for grouping. Example: "customBuildName": "Build123" |
 |`deviceLogs`|Optional|Set this parameter if you want to enable the device logs|
 |`video`|Optional|Set this parameter if you want to enable the video of the test run. By default it's set to `true`|
 |`local`|Optional|Set this parameter if you want to enable local testing. By default its set to `false`|
@@ -130,4 +131,4 @@ Dashboard also allows you to see the detail of a specific test session. Click on
 Refer to [Local Testing documentation](https://www.browserstack.com/docs/app-automate/espresso/getting-started-with-local-testing) to learn about running a Local Test on BrowserStack
 
 ### Step 3: Run tests in Parallel
-Parallel testing is running your Espresso test suite on multiple devices concurrently to reduce your testing time, and is a key feature of BrowserStack App Automate. With access to our extensive BrowserStack cloud, parallel testing on many platforms becomes very efficient.
+Parallel testing is running your Espresso test suite on multiple devices concurrently to reduce your testing time, and is a key feature of BrowserStack App Automate. With access to our extensive BrowserStack cloud, parallel testing on many platforms becomes very efficient. In order to execute your tests in parallel, shard your tests using the numShard and shardIndex parameters and execute the commands in parallel for each shard.
