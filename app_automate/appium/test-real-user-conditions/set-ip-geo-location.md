@@ -11,7 +11,7 @@ IP geolocation is a paid feature on BrowserStack. [Contact sales](https://www.br
 In order to use IP Geolocation with your automated tests, you need to use the following capability: 
 
 
-> "browserstack.geoLocation":"BG"
+> "browserstack.geoLocation" : "BG"
 
 
 
