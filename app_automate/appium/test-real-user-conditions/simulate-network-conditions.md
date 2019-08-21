@@ -4,7 +4,10 @@
 
 When you run your tests with the default network settings, each device will have unhindered WiFi connection with Internet connectivity. With Network Simulation, you can change the WiFi connection to simulate the speeds of network profiles like 2G or 3G that controls bandwidth, latency and packet loss
 
-Below are the network profiles you can use in the browserstack.networkProfile(Android) capability in order to simulate the different network speeds:
+Below are the network profiles you can use in the **browserstack.networkProfile** (Android) capability in order to simulate the different network speeds:
+
+> "browserstack.networkProfile" : "2g-gprs-good"
+
 
 | **Profile Name**              | **Bandwidth in/out (Kbps)**  |  **Latency (ms)**    |  **Packet Loss (%)**  |
 | ------------------------------|:----------------------------:| :-------------------:|:---------------------:|
@@ -27,6 +30,7 @@ Below are the network profiles you can use in the browserstack.networkProfile(An
 | airplane-mode (Android only)  | 	0                          |      0               |  0                    |
 | Reset                         | 	Set Network settings to Browserstack's default configuration              |
 
+--
 
 #### Switch network profiles in the middle of the test
 
@@ -45,6 +49,16 @@ curl -u "USERNAME:ACCESS-KEY" -H "Content-Type: application/json" -d "{\"customN
 ```
 
 Get session id using driver.session_id once the driver is created
+
+--
+
+#### Simulate Custom Network Condition
+
+Required if you want to simulate the custom network condition
+
+> "browserstack.customNetwork" : "1000, 1000, 100, 1"
+
+> Note: "1000, 1000, 100, 1" refers to download speed (kbps), upload speed (kbps), latency (ms), packet loss (%) in that order
 
 
 
