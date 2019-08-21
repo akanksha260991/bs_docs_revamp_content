@@ -1,4 +1,4 @@
-# Upload App from Local Machine 
+## Upload App from Local Machine 
 
 
 Upload your Android app (.apk file) or iOS app (.ipa file) to the BrowserStack servers using the REST API.
@@ -9,11 +9,12 @@ curl -u "USERNAME:ACCESS_KEY" -X POST "https://api-cloud.browserstack.com/app-au
 
 >Note: custom_id is optional. You can upload multiple builds under same custom_id. Use custom_id in 'app' capability for Appium to always pick the last uploaded build.
 
->Note: Please note the App URL (bs://<hashed appid>) returned in the response of this call:
+You will get the response after the successfull app upload as:
+>"app_url":"bs://<hashed appid>"}
+  
 
-```
-{"app_url":"bs://<hashed appid>"}
-```
+This response (bs://<hashed appid) will be used to set the **app** capability in your tests.
+
 > Note: If you do not have an .apk or .ipa file and are looking to simply try App Automate, you can download our [Android sample app](https://www.browserstack.com/app-automate/sample-apps/android/WikipediaSample.apk) or [iOS sample app](https://www.browserstack.com/app-automate/sample-apps/ios/BStackSampleApp.ipa) and upload to the BrowserStack servers using the above API.
 
 
