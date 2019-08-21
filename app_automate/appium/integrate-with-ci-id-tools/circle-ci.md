@@ -1,6 +1,6 @@
 # CircleCI
 
-circleci uses .circleci/config.yml for configuration, and it can be used to integrate your tests with BrowserStack. There are some variables you need to set: grid config, username, access key etc. For more detailed information on setting environment variables in circleci, please refer to their documentation.
+Circleci uses .circleci/config.yml for configuration, and it can be used to integrate your tests with BrowserStack. There are some variables you need to set: grid config, username, access key etc. For more detailed information on setting environment variables in circleci, please refer to their documentation.
 
 
 ### Integrate with App Automate
