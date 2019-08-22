@@ -75,7 +75,7 @@ curl -X POST "https://api-cloud.browserstack.com/app-automate/espresso/build" -d
 Complete list of API parameters:
 
 
-| Parameters | Required/Optional | Descriptiojn |
+| Parameters | Required/Optional | Description |
 | ---------- | ----------- | --------------- |
 |`app`| Required | app_url of the app you want to test |
 |`devices`| Required | list of Device and OS version you want to run your tests on. Acceptable format is -. Example: Google Pixel-8.0 |
