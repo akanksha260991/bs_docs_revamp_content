@@ -14,11 +14,11 @@ You can view the entire list of [supported browsers and OSes](https://www.browse
 If you have a use case which is not supported by BrowserStack API, please write to us at support@browserstack.com
 ```
 
-### Using API
+### Using the API
 
-There are two ways to consume the API
+You can consume the API in the following ways:
 
-#### Use HTTPS API
+#### HTTPS API
 You can use the HTTPS API. Refer the [browserstack-api GitHub repository](https://github.com/browserstack/api) for details.
 
 #### Language Bindings

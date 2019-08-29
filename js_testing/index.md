@@ -153,7 +153,7 @@ You can check the status of your test on [Automate Dashboard](https://automate.d
 ### Step 2: Integrate your Javascript unit test framework with BrowserStack
 In the above sample test case, we used QUnit unit testing framework. You may already be using a testing framework such as Jasmine, QUnit, Mocha, and others.
 
-[Karma](http://karma-runner.github.io/latest/index.html) is a Javascript test runner, it launches an HTTP server and runs your javascript unit tests on a browser. Please refer [Karma](https://karma-runner.github.io/) website on how to install and setup Karma. You will need to [install a plugin](https://github.com/karma-runner/karma#but-i-still-want-to-use-_insert-testing-library_) specific to your testing framework.
+[Karma](http://karma-runner.github.io/latest/index.html) is a Javascript test runner, it launches an HTTP server and runs the javascript unit tests on a browser. Karma supports most unit testing frameworks. Please refer [Karma](https://karma-runner.github.io/) website on how to install and setup Karma. You will need to [install a plugin](https://github.com/karma-runner/karma#but-i-still-want-to-use-_insert-testing-library_) specific to your testing framework.
 
 
 [Karma BrowserStack launcher](https://github.com/karma-runner/karma-browserstack-launcher) integrates with Karma and runs your Javascript unit test cases on BrowserStack grid.
