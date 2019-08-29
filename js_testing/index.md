@@ -256,9 +256,9 @@ To run your Javascript unit tests on our browsers and devices grid, you have to 
  Using the drop-down menus, select a combination of operating system, browser, and screen resolution. You can additionally run your tests on real Android and iOS devices in our datacenters.
 
 
-Look for the ![](https://www.browserstack.com/images/static/docs/real-device-icon.svg) icon to select a real device.
+Look for the ![](https://www.browserstack.com/images/static/docs/real-device-icon.svg =10x10) icon to select a real device.
 
-```os-browser-dropdown goes here```
+**os-browser-dropdown goes here**
 ```
 // define browsers
 customLaunchers: {
