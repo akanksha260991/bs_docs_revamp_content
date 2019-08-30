@@ -5,13 +5,15 @@
 
 Network Logs capture the app's performance data such as network traffic, latency, HTTP requests and responses in the HAR format. You can leverage Network logs to get a clear picture of all the requests your app is making, and the time taken for each of these requests. 
 
-Network Logs are disabled by default. To enable Network Logs use the capability `browserstack.networkLogs` with the value **'true'**
+Network Logs are disabled by default. To enable Network Logs use the capability `browserstack.networkLogs` with the value `true` in your tests:
 
-> "browserstack.networkLogs" : "true"
+```bash
+curl -X POST "https://api-cloud.browserstack.com/app-automate/espresso/build" -d \ "{\"devices\": [\"Samsung Galaxy S8-7.0\"], \"app\": \"bs://<hashed appid>\", \"deviceLogs\" : true, \"networkLogs\" : true, \"testSuite\": \"bs://<hashed testID>\"}" -H "Content-Type: application/json" -u "akanksha48:Gj9ztcdyupnWkwjmuTis"
+```
+
+
 
 You can download network logs using the REST API or via the [App Automate Dashboard](https://app-automate.browserstack.com/dashboard) under the Network Logs tab
-
-
 
 
 ## Raw Network Logs:
