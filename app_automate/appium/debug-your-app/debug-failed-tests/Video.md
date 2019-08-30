@@ -3,7 +3,7 @@
 
 #### Leverage the full range of debugging tools provided by BrowserStack to easily debug your test automation for native and hybrid mobile apps.
 
-Every Appium, Espresso, XCUITest or EarlGrey test run on BrowserStack is recorded exactly as it is executed on our remote machine. Video recordings are particularly helpful whenever a browser test fails as they help you retrace the steps which led to the failure. You can access the video recordings from App Automate Dashboard for each session. You can also download the videos from the Dashboard or retrieve a link to download the video using our REST API for sessions.
+Every Appium test run on BrowserStack is recorded exactly as it is executed on our remote machine. Video recordings are particularly helpful whenever a session fails as they help you retrace the steps which led to the failure. You can access the video recordings from App Automate Dashboard for each session. You can also download the videos from the Dashboard or retrieve a link to download the video using our REST API for sessions.
 
 ### Access video from Automate Dashboard:
 
