@@ -4,12 +4,15 @@
 
 Device Logs capture all the details of your Device test. You can view these logs using the **Device Logs** tab in the [App Automate Dashboard](https://app-automate.browserstack.com/dashboard). You can also retrieve a link to download the Device Logs by using our REST API. 
 
+To enable the Device Logs use the capability `browserstack.deviceLogs` with the value `true` in your tests:
+```bash
+curl -X POST "https://api-cloud.browserstack.com/app-automate/espresso/build" -d \ "{\"devices\": [\"Samsung Galaxy S8-7.0\"], \"app\": \"bs://<hashed appid>\", \"deviceLogs\" : true, \"testSuite\": \"bs://<hashed testID>\"}" -H "Content-Type: application/json" -u "USERNAME:ACCESS-KEY"
+```
 
-### Device Logs
+
+### Device Logs on Dashboard:
 
 ![Device-Logs](https://github.com/akanksha260991/bs_docs_revamp_content/blob/master/DeviceLogs-Espresso.png?raw=true "")
-
-
 
 
 
