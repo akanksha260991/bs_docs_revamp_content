@@ -9,16 +9,7 @@ Espresso tests run on BrowserStack is recorded exactly as it is executed on our 
 ### Video from Dashboard:
 
 
-![Video Recording](https://d3but80xmlhqzj.cloudfront.net/production/images/static/docs/app-automate/video-recording@2x.png "")
+![Video Recording](https://github.com/akanksha260991/bs_docs_revamp_content/blob/master/Espresso-Dashboard.png?raw=true "")
 
 
-
-
-
-
-> Note: Video recording increases test execution time slightly. You can disable this feature by setting the browserstack.video capability to false.
-
-```bash
-caps.setCapability("browserstack.video", "false");
-```
 
