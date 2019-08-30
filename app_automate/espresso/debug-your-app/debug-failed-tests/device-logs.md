@@ -16,6 +16,6 @@ Device Logs capture all the details of your Device test. You can view these logs
 
 #### The Device logs can be retrieved using the REST API.
 
-```
+```bash
 curl -u "USERNAME":"ACCESS-KEY" https://api.browserstack.com/app-automate/espresso/builds/<build-id>/sessions/tests/<session-id>/devicelogs
 ```
