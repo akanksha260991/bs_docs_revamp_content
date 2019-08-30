@@ -26,7 +26,7 @@ You can download network logs using the REST API or via the [App Automate Dashbo
 
 ### Retrieve Network Logs using REST API:
 
-```java
+```bash
 curl -u "USERNAME:ACCESS_KEY" https://api.browserstack.com/app-automate/espresso/builds/<build-id>/sessions/tests/<test-id>/networklogs
 ```
 
