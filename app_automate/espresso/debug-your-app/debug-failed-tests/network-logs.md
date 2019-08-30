@@ -13,17 +13,17 @@ Network Logs are disabled by default. To enable Network Logs use the capability 
 
 
 
-----
-#### Network Logs from App Automate Dashboard:
+
+### Network Logs from App Automate Dashboard:
 ![Network Logs](https://github.com/akanksha260991/bs_docs_revamp_content/blob/master/Screenshot%202019-08-30%20at%208.18.14%20PM.png?raw=true "")
 
 
 
-#### Raw Network Logs
+### Raw Network Logs:
 ![Network Logs](https://github.com/akanksha260991/bs_docs_revamp_content/blob/master/Screenshot%202019-08-30%20at%208.10.45%20PM.png?raw=true "")
 
 -----
-#### Retrieve Network Logs using REST API:
+### Retrieve Network Logs using REST API:
 
 ```java
 curl -u "USERNAME:ACCESS_KEY" https://api.browserstack.com/app-automate/espresso/builds/<build-id>/sessions/tests/<test-id>/networklogs
