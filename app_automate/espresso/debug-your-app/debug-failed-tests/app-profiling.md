@@ -1,7 +1,9 @@
 # App Profiling
 
 Graphical charts to report the usage of CPU, memory, network and battery while your mobile application is in use, enabling you to monitor app performance or the inefficient use of device resources.
-* You can access these charts in the **App Profiling** tab in the [App Automate dashboard](https://app-automate.browserstack.com/dashboard) inside the Session details section.
+* You can access these charts in the **App Profiling** tab in the [App Automate dashboard](https://app-automate.browserstack.com/dashboard) inside the Tests details or via the REST API.
+
+### App Profiling on Dashboard:
 
 ![Dashboard](https://github.com/akanksha260991/bs_docs_revamp_content/blob/master/Espresso-Dashboard.png?raw=true)
 
@@ -30,3 +32,9 @@ Track the battery consumption(%) by your app on the real device
 Track the network usage(kbps) by your app on the real device
 
 ![Battery Usage](https://github.com/akanksha260991/bs_docs_revamp_content/blob/master/Network.png?raw=true)
+
+
+#### The App profiling Data can be retrieved using the REST API:
+```bash
+curl -u "USERNAME:ACCESS-KEY" -X GET "https://api-cloud.browserstack.com/app-automate/espresso/builds/<build_id>/sessions/tests/<test_id>/appprofiling"
+```
