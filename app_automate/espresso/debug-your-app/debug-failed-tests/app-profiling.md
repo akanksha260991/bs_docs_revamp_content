@@ -33,6 +33,7 @@ Track the network usage(kbps) by your app on the real device
 
 ![Battery Usage](https://github.com/akanksha260991/bs_docs_revamp_content/blob/master/Network.png?raw=true)
 
+-----
 
 #### The App profiling Data can be retrieved using the REST API:
 ```bash
