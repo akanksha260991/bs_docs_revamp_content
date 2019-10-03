@@ -8,7 +8,7 @@ These are a comprehensive record of your test. They are used to identify all the
 You don't need to set any options for instrumentation logs, as these are enabled by default, and cannot be disabled.
 
 ## Video logs
-Every test run on the BrowserStack Selenium grid is recorded exactly as it is executed on our remote machine. This feature is particularly helpful whenever a browser test fails, so you can see the entire test in action. You can access these videos from the [App Automate dashboard](https://app-automate.browserstack.com/dashboard) for each session. You can also download the videos from the Dashboard or retrieve a link to download the video using our [REST API](https://www.browserstack.com/app-automate/rest-api?framework=espresso).
+Every test run on the BrowserStack is recorded exactly as it is executed on our remote machine. This feature is particularly helpful whenever a browser test fails, so you can see the entire test in action. You can access these videos from the [App Automate dashboard](https://app-automate.browserstack.com/dashboard) for each session. You can also download the videos from the Dashboard or retrieve a link to download the video using our [REST API](https://www.browserstack.com/app-automate/rest-api?framework=espresso).
 
 Video logs are enabled by default. Note that video recording increases the text execution time slightly. You can disable them by setting the 'video' parameter in to false while executing the Espresso test.
 

@@ -1,0 +1,3 @@
+# Interactive Session #
+
+Our Interactive session feature helps you take control of the Selenium test while it is executing. Think of it as triggering a breakpoint in your code, only you can do it through the [Automate dashboard](https://automate.browserstack.com). You can start an interactive session through the Automate dashboard while a test is running by clicking on the link labeled "Interactive Session".
