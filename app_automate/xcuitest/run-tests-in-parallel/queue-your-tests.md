@@ -4,7 +4,7 @@ With queuing, you can launch an additional number of parallel tests with differe
 
 With this feature, accounts up to 5 parallel tests can queue 5 tests. Beyond 5 parallel tests, an equivalent number of tests will be queued. For example, if you have 2 parallel tests for your account, you can queue up to 5 more tests. If you have 200 parallel tests, you can queue up to 200 more tests.
 
-**Note:** The wait limit for the execution of a pending queued job is 15 minutes and will be cancelled if exceeded.
+> **Note:** The wait limit for the execution of a pending queued job is 15 minutes and will be cancelled if exceeded.
 
 ## Scenarios where queuing helps
 Queuing is enabled by default by BrowserStack to ensure you don't have to worry about managing the test execution on your end. This helps especially in the following scenarios:
