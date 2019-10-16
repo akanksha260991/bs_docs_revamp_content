@@ -24,3 +24,15 @@ Network Logs are disabled by default. To enable Network Logs et the networkLogs 
 | Parameter | Required / Optional | Description |
 | ---------- | ----------- | --------------- |
 |`networkLogs`|Optional|Set this parameter if you want to enable the Network Logs. By default its `false`.|
+
+
+
+## Device logs
+Get the device logs about your test executions. To enable Device Logs set the **deviceLogs** parameter to true while executing the test. 
+
+| Parameter | Required / Optional | Description |
+| ---------- | ----------- | --------------- |
+|`deviceLogs`|Optional|Set this parameter if you want to enable the Device Logs |
+
+
+
