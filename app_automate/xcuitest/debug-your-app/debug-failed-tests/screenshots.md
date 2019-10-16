@@ -4,9 +4,15 @@ You can save the screenshots automatically captured by XCode. Screenshots can be
 
 To enable the screenshots set the API parameter `debugscreenshots` to true
 
-| Capability  | Value       |
+| Parameter  | Value       |
 | ------------- |-------------|
 | ```debugscreenshots```| ```true```|
+
+
+#### Command
+```bash
+curl -X POST "https://api-cloud.browserstack.com/app-automate/xcuitest/build" -d "{\"devices\": [\"iPhone 8 Plus-11\"], \"app\": \"bs://<hashed-id>\", \"deviceLogs\" : \"true\", \"debugscreenshots\" : \"true\", \"networkLogs\" : \"true\", \"testSuite\": \"bs://<hashed-test-id>\"}" -H "Content-Type: application/json" -u "USERNAME:ACCESS-KEY"
+```
 
 <br>
 
