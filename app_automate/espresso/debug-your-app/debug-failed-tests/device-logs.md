@@ -20,5 +20,5 @@ curl -X POST "https://api-cloud.browserstack.com/app-automate/espresso/build" -d
 ### The Device logs can be retrieved using the REST API.
 
 ```bash
-curl -u USERNAME":"ACCESS-KEY https://api.browserstack.com/app-automate/espresso/builds/<build-id>/sessions/tests/<session-id>/devicelogs
+curl -u USERNAME:ACCESS-KEY https://api.browserstack.com/app-automate/espresso/builds/<build-id>/sessions/tests/<session-id>/devicelogs
 ```
