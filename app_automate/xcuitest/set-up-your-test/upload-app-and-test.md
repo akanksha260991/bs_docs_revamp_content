@@ -2,7 +2,7 @@
 
 Upload your iOS app (.ipa file) to the BrowserStack servers using the REST API.
 
->Note: Note: If you do not have an .ipa file and are looking to simply try App Automate, you can download our [Sample app](https://www.browserstack.com/app-automate/sample-apps/ios/BrowserStack-SampleApp.ipa) and upload to the BrowserStack servers using the above API. Complete list of REST APIs can be found [here](https://www.browserstack.com/app-automate/rest-api?framework=xcuitest).
+> **Note:** If you do not have an .ipa file and are looking to simply try App Automate, you can download our [Sample app](https://www.browserstack.com/app-automate/sample-apps/ios/BrowserStack-SampleApp.ipa) and upload to the BrowserStack servers using the above API. Complete list of REST APIs can be found [here](https://www.browserstack.com/app-automate/rest-api?framework=xcuitest).
 
 ```
 curl -u "USERNAME:ACCESS_KEY" \
