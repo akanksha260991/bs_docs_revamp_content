@@ -8,7 +8,7 @@ Network Logs capture the app's performance data such as network traffic, latency
 Network Logs are disabled by default. To enable Network Logs update the API parameter `networkLogs` with the value `true` in your execute test API:
 
 ```bash
-curl -X POST "https://api-cloud.browserstack.com/app-automate/espresso/build" -d \ "{\"devices\": [\"Samsung Galaxy S8-7.0\"], \"app\": \"bs://<hashed appid>\", \"deviceLogs\" : true, \"networkLogs\" : true, \"testSuite\": \"bs://<hashed testID>\"}" -H "Content-Type: application/json" -u "USERNAME:ACCESS-KEY"
+curl -X POST "https://api-cloud.browserstack.com/app-automate/xcuitest/build" -d \ "{\"devices\": [\"Samsung Galaxy S8-7.0\"], \"app\": \"bs://<hashed appid>\", \"deviceLogs\" : true, \"networkLogs\" : true, \"testSuite\": \"bs://<hashed testID>\"}" -H "Content-Type: application/json" -u "USERNAME:ACCESS-KEY"
 ```
 
 
