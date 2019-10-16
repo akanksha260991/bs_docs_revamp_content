@@ -8,7 +8,7 @@ Espresso tests run on BrowserStack is recorded exactly as it is executed on our 
 Video is enabled by default. To disable Video use the API parameter `video` with the value `false` in the execute test API:
 
 ```bash
-curl -X POST "https://api-cloud.browserstack.com/app-automate/xcuitest/build" -d "{\"devices\": [\"iPhone 8 Plus-11\"], \"app\": \"bs://<hashed appid>\", \"deviceLogs\" : \"true\", \"video\" : \"true\,\"testSuite\": \"bs://<hashed testID>\"}" -H "Content-Type: application/json" -u "akanksha48:Gj9ztcdyupnWkwjmuTis"
+curl -X POST "https://api-cloud.browserstack.com/app-automate/xcuitest/build" -d "{\"devices\": [\"iPhone 8 Plus-11\"], \"app\": \"bs://<hashed appid>\", \"deviceLogs\" : \"true\", \"video\" : \"true\,\"testSuite\": \"bs://<hashed testID>\"}" -H "Content-Type: application/json" -u "USERNAME:ACCESS-KEY"
 ```
 
 
