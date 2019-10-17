@@ -29,7 +29,7 @@ caps.setCapability("browserstack.localIdentifier", "Test123");
 #### Managing multiple Local Testing connections
 You can use the [Local Testing API](https://www.browserstack.com/local-testing/api) to check the status of (or disconnect) active binaries. However, your connections will not show up in the API response unless you establish them using '--enable-logging-for-api' flag, as follows:
 
-```java
+```bash
 ./BrowserStackLocal --key ACCESS_KEY --enable-logging-for-api <other_params>
 ```
 
