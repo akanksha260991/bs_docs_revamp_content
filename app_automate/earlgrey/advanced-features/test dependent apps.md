@@ -1,6 +1,14 @@
 # Test Dependent Apps
 
-Install and test multiple apps on the device to test the flows dependent on other apps. You can install dependent apps using the otherApps parameter. Example: \"otherApps\" : [\"bs://<hashed-id>\"]. Maximum 3 app ids allowed. This parameter has to be used along with app parameter.
+Install and test multiple apps on the device to test the flows dependent on other apps. You can install dependent apps using the otherApps parameter. 
+
+```
+\"otherApps\" : [\"bs://<hashed-id>\"]
+```
+
+> Note: Maximum 3 app ids allowed. This parameter has to be used along with app parameter.
+
+<br>
 
 | Parameter | Required / Optional | Description |
 | ---------- | ----------- | --------------- |
