@@ -4,10 +4,10 @@ Once you run an automated tests, you will be able to view the test result on the
 
 
 
-![](https://github.com/akanksha260991/bs_docs_revamp_content/blob/master/Screenshot%202019-10-16%20at%206.35.21%20PM.png)
+![](https://github.com/akanksha260991/bs_docs_revamp_content/blob/master/Screenshot%202019-10-17%20at%2011.42.11%20AM.png)
 
 
 Dashboard also allows you to drill down to the details of a specific test. In Class/Test details view you will have access to all the tests information, and debugging capabilities like, Video, Instrumentation logs and Device logs.
 
 
-![Test Details Page](https://github.com/akanksha260991/bs_docs_revamp_content/blob/master/Screenshot%202019-10-16%20at%206.35.43%20PM.png)
+![Test Details Page](https://github.com/akanksha260991/bs_docs_revamp_content/blob/master/Screenshot%202019-10-17%20at%2011.42.45%20AM.png)
